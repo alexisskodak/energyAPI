@@ -10,6 +10,9 @@ decorator==4.4.2
 defusedxml==0.6.0
 entrypoints==0.3
 fastapi==0.63.0
+Flask==1.1.2
+Flask-Cors==3.0.10
+Flask-RESTful==0.3.8
 gunicorn==20.0.4
 h11==0.12.0
 itsdangerous==1.1.0
@@ -22,7 +25,6 @@ nbclient==0.5.2
 nbconvert==6.0.7
 nbformat==5.1.2
 nest-asyncio==1.5.1
-notebook==6.2.0
 numpy==1.20.1
 packaging==20.9
 pandas==1.2.2
@@ -54,6 +56,7 @@ typing-extensions==3.7.4.3
 unicode==2.8
 Unidecode==1.2.0
 uvicorn==0.13.4
+uvloop==0.15.2
 wcwidth==0.2.5
 webencodings==0.5.1
 Werkzeug==1.0.1
