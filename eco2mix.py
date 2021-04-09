@@ -18,4 +18,4 @@ s2 = df.groupby([df['Date'].dt.year, df['Date'].dt.month])['Taux de CO2 (g/kWh)'
 s2.head(20)
 
 # Convert to json
-yearly_emissions = json.loads(s2.to_json())
+yearly_emissions = json.loads(s2.to_json(orient='index'))
