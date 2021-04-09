@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dataframes import yearly_prod_groups, yearly_cons_groups, year_list, regional_cons, regional_prod
+from eco2mix import yearly_emissions
 
 app = FastAPI()
 
@@ -35,3 +36,8 @@ def get_hist_cons_data(region_id: int):
 @app.get("/api/production/historical/{region_id}")
 def get_hist_prod_data(region_id: int):
     return regional_prod[region_id]
+
+
+@app.get("/api/emission")
+def get_hist_emission():
+    return yearly_emissions
