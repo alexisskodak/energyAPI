@@ -2,7 +2,7 @@ import pandas
 import json
 
 pandas.set_option('max_columns', None)
-df = pandas.read_csv('data/eco2mix.csv', sep=';')
+df = pandas.read_csv('data/eco2mix_min.csv', sep=';')
 
 # keep only the dates and the CO2 emission rate
 df.drop(df.columns.difference(['Date', 'Taux de CO2 (g/kWh)']), 1, inplace=True)
