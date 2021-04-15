@@ -4,7 +4,8 @@ import json
 df = pandas.read_csv(
     'data/eco2mix_min.csv',
     sep=';',
-    usecols=['Date', 'Taux de CO2 (g/kWh)']
+    usecols=['Date', 'Taux de CO2 (g/kWh)'],
+    dtype={'Taux de CO2 (g/kWh)': 'float16'}
 )
 
 # drop all rows with NaN values
