@@ -1,7 +1,11 @@
 import pandas
 import json
 
-df = pandas.read_csv('data/eco2mix_min.csv', sep=';')
+df = pandas.read_csv(
+    'data/eco2mix_min.csv',
+    sep=';',
+    usecols=['Date', 'Taux de CO2 (g/kWh)']
+)
 
 # drop all rows with NaN values
 df.dropna(subset=['Taux de CO2 (g/kWh)'], inplace=True)
